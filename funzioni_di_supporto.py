@@ -1,10 +1,7 @@
 
 # coding: utf-8
 
-# # Modelli di Computazione Affettiva
-# ### Luca Arrotta
-# 
-# ### Funzioni di Supporto
+# # Funzioni di Supporto
 # Lo scopo di questo notebook è quello di implementare alcune funzioni di supporto.
 # I nostri dataset presentano gli esempi (x,y) in questa forma:
 # * x: singolo frame estratto da un video
@@ -19,20 +16,12 @@
 #     4. Estrazione degli HOG
 # In questo notebook sono implementate le funzioni di supporto necessarie per applicare queste 4 operazioni.
 # 
-# <br>
-# 
-# In un altro notebook, passeremo le feature degli HOG di ogni esempio del Training Set ad un algoritmo PCA per la riduzione della dimensiontalità.
-# Alla fine otterremo un dataset in cui gli esempi (x,y) saranno:
-# * x: dati relativi al singolo frame dopo l'applicazione della pipeline descritta
-# * y: etichetta associata al frame che contiene le Action Unit attive in quel frame
-#    
-# 
 # ***
 
 # ### 1. Rilevamento del volto del soggetto
 # Stampa di una delle immagini del dataset
 
-# In[9]:
+# In[2]:
 
 
 import matplotlib.pyplot as plt
@@ -47,12 +36,13 @@ def show_image_from_path(path):
     imgplot = plt.imshow(img)
     plt.show()
 
-show_image_from_path('obama2.jpeg')
+show_image_from_path('images/obama2.jpeg')
 
 
+# <br>
 # Rilevamento del viso del soggetto utilizzando la libreria [Face Recognition](https://github.com/ageitgey/face_recognition)
 
-# In[10]:
+# In[3]:
 
 
 import dlib
@@ -79,7 +69,7 @@ def get_face_locations(path, verbose=True):
     return out_image   # ritorna l'ultima faccia che ha trovato
         
         
-face_image = get_face_locations("obama2.jpeg", verbose=True)
+face_image = get_face_locations("images/obama2.jpeg", verbose=True)
 show_image(face_image)
 
 
@@ -88,7 +78,7 @@ show_image(face_image)
 # ### 2. Estrazione dei Landmark
 # Estrazione dei landmark utilizzando nuovamente [Face Recognition](https://github.com/ageitgey/face_recognition)
 
-# In[11]:
+# In[4]:
 
 
 from PIL import Image, ImageDraw
@@ -128,7 +118,7 @@ show_image(image_drawn)
 # ### 3. Face Alignment e maschera
 # Codice adattato da questo [tutorial](https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/)
 
-# In[12]:
+# In[5]:
 
 
 import FaceAligner
@@ -203,7 +193,7 @@ def align_and_crop(img, landmarks, tol=0):
     return img
 
 
-# In[13]:
+# In[6]:
 
 
 #out_face = get_aligned_face(face_image, face_landmarks_list)
@@ -224,7 +214,7 @@ show_image(out_face)
 # ### 4. Estrazione degli HOG
 # Utilizzando la libreria [scikit-image](http://scikit-image.org/docs/dev/auto_examples/features_detection/plot_hog.html)
 
-# In[29]:
+# In[7]:
 
 
 from skimage.feature import hog
