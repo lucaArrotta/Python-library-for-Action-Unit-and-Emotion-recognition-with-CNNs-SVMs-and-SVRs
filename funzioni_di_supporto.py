@@ -51,7 +51,11 @@ from PIL import Image
 
 def get_face_locations(path, verbose=True):
     # Carica l'immagine in un array numpy
-    img = face_recognition.load_image_file(path)
+    print("AAA: {}".format(type(path)))
+    if type(path) == str:
+        img = face_recognition.load_image_file(path)
+    else:
+        img = path
 
     # Trova tutte le facce nell'immagine usando il modello di default (basato sulle HOG)
     face_locations = face_recognition.face_locations(img)
