@@ -23,20 +23,43 @@ def load_model(name):
     return joblib.load("{}/{}".format(models_path, name))
 
 
-models_dict = {"svm1": load_model("svm_au1"), "svm2": load_model("svm_au2"), "svm4": load_model("svm_au4"), "svm5": load_model("svm_au5"), "svm6": load_model("svm_au6"), "svm7": load_model("svm_au7"), "svm9": load_model("svm_au9"), "svm12": load_model("svm_au12"), "svm14": load_model("svm_au14"), "svm15": load_model("svm_au15"), "svm16": load_model("svm_au16"), "svm20": load_model("svm_au20"), "svm23": load_model("svm_au23"), "svm26": load_model("svm_au26"),                "pca1": load_model("pca_au1"), "pca2": load_model("pca_au2"), "pca4": load_model("pca_au4"), "pca5": load_model("pca_au5"), "pca6": load_model("pca_au6"), "pca7": load_model("pca_au7"), "pca9": load_model("pca_au9"), "pca12": load_model("pca_au12"), "pca14": load_model("pca_au14"), "pca15": load_model("pca_au15"), "pca16": load_model("pca_au16"), "pca20": load_model("pca_au20"), "pca23": load_model("pca_au23"), "pca26": load_model("pca_au26")}
+models_dict = {"svm1": load_model("svm_au1"), "svm2": load_model("svm_au2"), "svm4": load_model("svm_au4"), "svm5": load_model("svm_au5"), "svm6": load_model("svm_au6"), "svm7": load_model("svm_au7"), "svm9": load_model("svm_au9"), "svm12": load_model("svm_au12"), "svm14": load_model("svm_au14"), "svm15": load_model("svm_au15"), "svm16": load_model("svm_au16"), "svm20": load_model("svm_au20"), "svm23": load_model("svm_au23"), "svm26": load_model("svm_au26"), \
+			   "svr1": load_model("svr_au1-fake"), "svr2": load_model("svr_au2-fake"), "svr4": load_model("svr_au4-fake"), "svr5": load_model("svr_au5-fake"), "svr6": load_model("svr_au6-fake"), "svr7": load_model("svr_au7-fake"), "svr9": load_model("svr_au9-fake"), "svr12": load_model("svr_au12"), "svr14": load_model("svr_au14"), "svr15": load_model("svr_au15-fake"), "svr16": load_model("svr_au16-fake"), "svr20": load_model("svr_au20-fake"), "svr23": load_model("svr_au23-fake"), "svr26": load_model("svr_au26-fake"), \
+			   "pca1-svm": load_model("pca_au1-svm"), "pca2-svm": load_model("pca_au2-svm"), "pca4-svm": load_model("pca_au4-svm"), "pca5-svm": load_model("pca_au5-svm"), "pca6-svm": load_model("pca_au6-svm"), "pca7-svm": load_model("pca_au7-svm"), "pca9-svm": load_model("pca_au9-svm"), "pca12-svm": load_model("pca_au12-svm"), "pca14-svm": load_model("pca_au14-svm"), "pca15-svm": load_model("pca_au15-svm"), "pca16-svm": load_model("pca_au16-svm"), "pca20-svm": load_model("pca_au20-svm"), "pca23-svm": load_model("pca_au23-svm"), "pca26-svm": load_model("pca_au26-svm"), \
+			   "scaler1-svm": load_model("scaler_au1-svm"), "scaler2-svm": load_model("scaler_au2-svm"), "scaler4-svm": load_model("scaler_au4-svm"), "scaler5-svm": load_model("scaler_au5-svm"), "scaler6-svm": load_model("scaler_au6-svm"), "scaler7-svm": load_model("scaler_au7-svm"), "scaler9-svm": load_model("scaler_au9-svm"), "scaler12-svm": load_model("scaler_au12-svm"), "scaler14-svm": load_model("scaler_au14-svm"), "scaler15-svm": load_model("scaler_au15-svm"), "scaler16-svm": load_model("scaler_au16-svm"), "scaler20-svm": load_model("scaler_au20-svm"), "scaler23-svm": load_model("scaler_au23-svm"), "scaler26-svm": load_model("scaler_au26-svm"), \
+			   "pca1-svr": load_model("pca_au1-svr"), "pca2-svr": load_model("pca_au2-svr"), "pca4-svr": load_model("pca_au4-svr"), "pca5-svr": load_model("pca_au5-svr"), "pca6-svr": load_model("pca_au6-svr"), "pca7-svr": load_model("pca_au7-svr"), "pca9-svr": load_model("pca_au9-svr"), "pca12-svr": load_model("pca_au12-svr"), "pca14-svr": load_model("pca_au14-svr"), "pca15-svr": load_model("pca_au15-svr"), "pca16-svr": load_model("pca_au16-svr"), "pca20-svr": load_model("pca_au20-svr"), "pca23-svr": load_model("pca_au23-svr"), "pca26-svr": load_model("pca_au26-svr"), \
+			   "scaler1-svr": load_model("scaler_au1-svr"), "scaler2-svr": load_model("scaler_au2-svr"), "scaler4-svr": load_model("scaler_au4-svr"), "scaler5-svr": load_model("scaler_au5-svr"), "scaler6-svr": load_model("scaler_au6-svr"), "scaler7-svr": load_model("scaler_au7-svr"), "scaler9-svr": load_model("scaler_au9-svr"), "scaler12-svr": load_model("scaler_au12-svr"), "scaler14-svr": load_model("scaler_au14-svr"), "scaler15-svr": load_model("scaler_au15-svr"), "scaler16-svr": load_model("scaler_au16-svr"), "scaler20-svr": load_model("scaler_au20-svr"), "scaler23-svr": load_model("scaler_au23-svr"), "scaler26-svr": load_model("scaler_au26-svr")}
 aus = [1, 2, 4, 5, 6, 7, 9, 12, 14, 15, 16, 20, 23, 26]
 
 
 # funziona sia passandogli un path che un'immagine direttamente
-def get_img_aus(img):
+def get_img_aus_occurencies(img):
     global aus
     global models_dict
     img_aus = list()
     orig_fd = apply_pipeline(img)
     for au in aus:
-        pca = models_dict["pca{}".format(au)]
+        pca = models_dict["pca{}-svm".format(au)]
+        scaler = models_dict["scaler{}-svm".format(au)]
         clf = models_dict["svm{}".format(au)]
         fd = pca.transform(orig_fd.reshape(1,-1))
+        fd = scaler.transform(fd)
+        if clf.predict(fd)[0] == 1:
+            img_aus.append(au)
+    return img_aus
+
+
+def get_img_aus_intensities(img):
+    global aus
+    global models_dict
+    img_aus = list()
+    orig_fd = apply_pipeline(img)
+    for au in aus:
+        pca = models_dict["pca{}-svr".format(au)]
+        scaler = models_dict["scaler{}-svr".format(au)]
+        clf = models_dict["svr{}".format(au)]
+        fd = pca.transform(orig_fd.reshape(1,-1))
+        fd = scaler.transform(fd)
         if clf.predict(fd)[0] == 1:
             img_aus.append(au)
     return img_aus
@@ -72,9 +95,9 @@ def disgustMean(aus):
     return round(sum([aus.count(x) for x in happiness_aus])/len(happiness_aus), 2)
 
 
-def get_img_emotions(img):
+def get_img_emotions_occurencies(img):
     emotions = dict()
-    img_aus = get_img_aus(img)
+    img_aus = get_img_aus_occurencies(img)
     emotions["happiness"] = happinessMean(img_aus)
     emotions["sadness"] = sadnessMean(img_aus)
     emotions["surprise"] = surpriseMean(img_aus)
@@ -84,11 +107,24 @@ def get_img_emotions(img):
     return emotions
 
 
+def get_img_emotions_intensities(img):
+    emotions = dict()
+    img_aus = get_img_aus_intensities(img)
+    emotions["happiness"] = happinessMean(img_aus)
+    emotions["sadness"] = sadnessMean(img_aus)
+    emotions["surprise"] = surpriseMean(img_aus)
+    emotions["fear"] = fearMean(img_aus)
+    emotions["anger"] = angerMean(img_aus)
+    emotions["disgust"] = disgustMean(img_aus)
+    return emotions
+
+
+'''
 def get_img_relative_emotions(img):
     emotions = get_img_emotions(img)
     s = sum(emotions.values())
     for k, v in emotions.items():
-        pct = round(min(v * 100.00 / s, v*100.00), 2)  # il secondo operatore del min l'ho aggiunto. per avere sempre percentuali non va bene il min
+        pct = round(min(v * 100.00 / s, v*100.00), 2)
         emotions[k] = pct
     return emotions
         
@@ -97,5 +133,6 @@ def get_img_relative_emotions(img):
 def get_maximum_emotion(img):
     emotions = get_img_emotions(img)
     return max(emotions.items(), key=operator.itemgetter(1))
+'''
 
 
