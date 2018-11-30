@@ -11,7 +11,7 @@ Notebooks:
 - svm\_training: training of a SVM for each Action Unit we consider
 
 - svr\_training: training of a SVR for each Action Unit we consider
-- test\_au\_lib: tests about "au_lib" script functions
+- test\_au\_lib: tests about "au\_lib" script functions
 
 <br>
 
