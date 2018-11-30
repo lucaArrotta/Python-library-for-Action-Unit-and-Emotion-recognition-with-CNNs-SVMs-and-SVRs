@@ -128,18 +128,6 @@ def get_img_emotions_occurencies(img):
     return emotions
 
 
-def get_img_emotions_intensities(img):
-    emotions = dict()
-    img_aus = get_img_aus_intensities(img)
-    emotions["happiness"] = happinessMean(img_aus)
-    emotions["sadness"] = sadnessMean(img_aus)
-    emotions["surprise"] = surpriseMean(img_aus)
-    emotions["fear"] = fearMean(img_aus)
-    emotions["anger"] = angerMean(img_aus)
-    emotions["disgust"] = disgustMean(img_aus)
-    return emotions
-
-
 '''
 def get_img_relative_emotions(img):
     emotions = get_img_emotions(img)
