@@ -1,10 +1,10 @@
 # MCA_Arrotta
-###Addestramento di modelli SVM e SVR per il rilevamento di Action Unit
+### Addestramento di modelli SVM e SVR per il rilevamento di Action Unit
 
 Notebooks:
 
 - face\_helpers: implementation of different functions in order to
- - detect the face of the subject in an image
+  - detect the face of the subject in an image
   - detect the landmarks of the face
   - compute face alignment and masking
   - extract the HOG features
