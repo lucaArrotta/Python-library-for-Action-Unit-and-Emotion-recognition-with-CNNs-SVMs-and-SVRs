@@ -1,5 +1,5 @@
 # MCA_Arrotta
-### Addestramento di modelli SVM e SVR per il rilevamento di Action Unit
+### SVMs and SVRs Training for Action Unit detection
 
 Notebooks:
 
