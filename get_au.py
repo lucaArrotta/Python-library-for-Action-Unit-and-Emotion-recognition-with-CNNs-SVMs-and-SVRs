@@ -9,7 +9,7 @@ if __name__ == '__main__':
 	aus_int = get_img_aus_intensities(sys.argv[1])
 	print("AUs occurencies:  ", aus)
 	print("emotions: ", emotions)
-	print("AUs intensities:  ", aus)
+	print("AUs intensities:  ", aus_int)
 	img = Image.open(sys.argv[1])
 	imgplot = plt.imshow(img)
 	plt.title("AUs (occurencies): {}\n{}\nAUs (intensities): {}".format(aus, emotions, aus_int))
