@@ -92,28 +92,33 @@ def happinessMean(aus):
 
 
 def sadnessMean(aus):
-    happiness_aus = [1, 4, 15]
-    return round(sum([aus.count(x) for x in happiness_aus])/len(happiness_aus), 2)
+    sadness_aus = [1, 4, 15]
+    return round(sum([aus.count(x) for x in sadness_aus])/len(sadness_aus), 2)
 
 
 def surpriseMean(aus):
-    happiness_aus = [1, 2, 5, 26]
-    return round(sum([aus.count(x) for x in happiness_aus])/len(happiness_aus), 2)
+    surprise_aus = [1, 2, 5, 26]
+    return round(sum([aus.count(x) for x in surprise_aus])/len(surprise_aus), 2)
 
 
 def fearMean(aus):
-    happiness_aus = [1, 2, 4, 5, 7, 20, 26]
-    return round(sum([aus.count(x) for x in happiness_aus])/len(happiness_aus), 2)
+    fear_aus = [1, 2, 4, 5, 7, 20, 26]
+    return round(sum([aus.count(x) for x in fear_aus])/len(fear_aus), 2)
 
 
 def angerMean(aus):
-    happiness_aus = [4, 5, 7, 23]
-    return round(sum([aus.count(x) for x in happiness_aus])/len(happiness_aus), 2)
+    anger_aus = [4, 5, 7, 23]
+    return round(sum([aus.count(x) for x in anger_aus])/len(anger_aus), 2)
 
 
 def disgustMean(aus):
-    happiness_aus = [9, 15, 16]
-    return round(sum([aus.count(x) for x in happiness_aus])/len(happiness_aus), 2)
+    disgust_aus = [9, 15, 16]
+    return round(sum([aus.count(x) for x in disgust_aus])/len(disgust_aus), 2)
+
+
+def contemptMean(aus):
+    contempt_aus = [12, 14]
+    return round(sum([aus.count(x) for x in contempt_aus])/len(contempt_aus), 2)
 
 
 def get_img_emotions_occurencies(img):
@@ -125,6 +130,7 @@ def get_img_emotions_occurencies(img):
     emotions["fear"] = fearMean(img_aus)
     emotions["anger"] = angerMean(img_aus)
     emotions["disgust"] = disgustMean(img_aus)
+    emotions["contempt"] = contemptMean(img_aus)
     return emotions
 
 
