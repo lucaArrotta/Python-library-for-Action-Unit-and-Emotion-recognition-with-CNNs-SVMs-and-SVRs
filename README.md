@@ -1,5 +1,6 @@
 # MCA_Arrotta
-### SVMs and SVRs Training for Action Unit detection
+### Python library for Action Unit detection with SVMs and SVRs
+
 
 Notebooks:
 

@@ -48,7 +48,7 @@ models_dict = {"svm1": load_model("svm_au1"), "svm2": load_model("svm_au2"), "sv
 aus = [1, 2, 4, 5, 6, 7, 9, 12, 14, 15, 16, 20, 23, 26]
 
 
-# funziona sia passandogli un path che un'immagine direttamente
+# input can be an image or the path of an image
 def get_img_aus_occurencies(img):
     global aus
     global models_dict
