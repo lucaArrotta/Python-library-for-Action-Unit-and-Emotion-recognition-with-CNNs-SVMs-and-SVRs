@@ -27,8 +27,7 @@ Scripts:
 
 - get\_au:
 
-![Image1](images/get_au_img1.PNG)
+![Image1](images/test_orig.PNG)
 
-![Image2](images/get_au_img2.PNG)
 
 
