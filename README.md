@@ -1,5 +1,5 @@
-# MCA_Arrotta
-### Python library for Action Unit detection with SVMs and SVRs
+# Python library for Action Unit detection with SVMs and SVRs
+Project developed for "Models of Affective Computing" class.
 
 
 Notebooks:
