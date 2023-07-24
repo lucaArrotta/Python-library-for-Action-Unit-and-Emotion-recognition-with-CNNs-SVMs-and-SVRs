@@ -18,7 +18,7 @@ Notebooks:
 
 Scripts:
 
-- FaceAligner, helpers: taken from [this tutorial](https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/)
+- FaceAligner, helpers: based on [this tutorial](https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/)
 - au_lib: this script implements the following functions
   - get\_img\_aus\_occurencies:      get the AUs occurencies from an image (using the SVMs)
   - get\_img\_aus\_intensities:      get the AUs intensities from an image (using the SVRs)
