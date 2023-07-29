@@ -1,11 +1,13 @@
 # Python library for Action Unit and Emotion recognition with CNNs, SVMs and SVRs
-Project developed for "Models of Affective Computing" course.
+Project developed for the "Models of Affective Computing" master course.
 
 This repository contains different notebooks/scripts regarding the training of machine learning and deep learning models for facial emotion recognition:
   - The EfficientNet model pre-trained on ImageNet and fine-tuned in different ways to perform single-output multi-class classification and multi-output multi-class/binary classification
   - Support Vector Machines models for Action Units recognition and Support Vector Regression models for Action Units intensity recognition
 
 Moreover, the repository contains the implementation of helper functions to perform Computer Vision pre-processing tasks.
+
+Finally, it includes a script to run one of the trained models on a web app through Streamlit.
 
 <hr>
 
@@ -38,7 +40,7 @@ More specifically, this model presents 15 output layers: 1 to perform multi-clas
   - get\_img\_aus\_intensities:      get the Action Units intensities from an input image (using the SVR-based models)
   - get\_img\_emotions\_occurencies: given an input image, for each emotion, get the percentage of detected Action Units regarding that emotion (based on AUs occurencies)
 - face\_helpers: code extracted starting from the "face\_helpers" notebook
-- streamlit\_web\_app: web app that opens the webcam and uses the trained image classification model to detect the emotion of the recorded person
+- streamlit\_web\_app: web app that opens the webcam and uses one of the trained image classification models to detect the emotion of the recorded person
 
 - get\_au: given the path of an image, it outputs
   - the Action Units occurencies (SVM-based models)
