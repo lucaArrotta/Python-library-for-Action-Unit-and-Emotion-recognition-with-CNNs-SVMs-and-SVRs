@@ -32,7 +32,7 @@ if start:
 
     t.text("Opening camera...")
 
-    classes = ['anger', 'contempt', 'disgust', 'fear', 'happy', 'sadness', 'surprise']
+    classes = ['anger', 'contempt', 'disgust', 'fear', 'happiness', 'sadness', 'surprise']
     initialize_counter = 0
 
 
