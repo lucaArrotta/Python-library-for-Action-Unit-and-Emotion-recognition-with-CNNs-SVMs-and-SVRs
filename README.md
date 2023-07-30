@@ -9,7 +9,7 @@ Moreover, the repository contains the implementation of helper functions to perf
 
 Finally, it includes a script to run one of the trained models on a web app through Streamlit.
 
-![Gif](images/web_app.gif)
+<img src="images/web_app.gif" width="100%">
 
 <hr>
 
